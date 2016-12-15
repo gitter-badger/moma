@@ -172,3 +172,14 @@ void driver::heun(
     delete[] drift_arr; delete[] trial_drift_arr;
     delete[] diffusion_mat; delete[] trial_diffusion_mat;
 }
+
+void integrator::stm( double test )
+{
+    // Take a trial step for the diffusion
+
+    // Compute the updated diffusion
+
+    // Form the nonlinear equation to be solved
+
+    // Run newton method
+}

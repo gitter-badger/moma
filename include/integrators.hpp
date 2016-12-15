@@ -82,6 +82,9 @@ namespace integrator
         const size_t n_dims, const size_t n_wiener,
         const double t, const double step_size );
 
+    // Stochastic theta method (implicit)
+    void stm( double test );
+
     // Milstein
     template <class CSTATES, class CDIFF>
     void milstein( CSTATES &next_state, const CSTATES &current_state,
